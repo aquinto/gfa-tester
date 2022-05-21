@@ -10,4 +10,4 @@ The script was written to account for both manually graded and autograded projec
 
 I will be giving a usage case for manual projects below. 
 
-1. Download the given project, ensure to 'Shown' for **Sub-scores for assignments'
+1. Download the given project, ensure to 'Shown' for **Sub-scores for assignments**
