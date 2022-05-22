@@ -28,6 +28,12 @@ I will be giving a usage case for manual projects below.  First, we need to dete
     Inside our code we have this variable name:
 
     ```python
-        manual_columns = {'MB' : 10, 'BT' : 15, 'PC' : 15, 'SG' : 5}
+        manual_columns = {}
+    ```
+
+    This dictionary is going to store the column name and their total possible points. The key is going to be the column name as a str and the value is the total points as an int. Going back to our example, lets say that our requirements are the first four columns shown the image above, our **'manual_columns' dictionary will look like this.
+
+    ```python
+        manual_columns = {'MB' : 10, 'BP' : 10, 'BT' : 15, 'PC' : 15}
     ```
 3. Download the scores for the given project as a CSV file, be sure to check off 'Shown' for **Sub-scores for assignments** 
