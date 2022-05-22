@@ -38,16 +38,16 @@ def main(input_file_name, output_file_name, requirements, points_needed_to_pass_
 #gfa requirements for given assignment, key value should be the requirement title as listed in the grades server
 #value should be the points necessary to pass the GFA requirement
 #If it is an autograder projet with pub tests do this below
-number_of_pub_tests = 6
-points_per_pub_test = 1
-number_of_pub_tests_needed_to_pass = 6
-header_name = 'GFA'
+number_of_pub_tests = 0
+points_per_pub_test = 0
+number_of_pub_tests_needed_to_pass = 0
+header_name = ''
 columns = generate_pub_tests(number_of_pub_tests, points_per_pub_test, header_name)
 points_total = number_of_pub_tests*points_per_pub_test
 
 # if it is not an autograded project such as a Processing project, change the 'autograded' variable to False
 # you will have to manually fill out the dictionary below since it is manually graded
-manual_columns = {'MB' : 10, 'BT' : 15, 'PC' : 15, 'SG' : 5}
+manual_columns = {}
 points_total_2 = sum(manual_columns.values())
 
 #requirements will be used to filter columns from the original dataframe
@@ -57,15 +57,15 @@ requirements = columns if autograded else manual_columns
 points_needed_to_pass_gfa = points_total if autograded else points_total_2
 
 #assignment name for the GFA that is listed in the grades server. (Spring 2022 is GFA1,2,3,4 etc)
-assignment = 'GFA'
-comment_pass = 'all GFAs Passed'
-comment_fail = 'some GFAs Failed'
+assignment = ''
+comment_pass = ''
+comment_fail = ''
 
 #original csv file downloaded from grades server
-input_file_name = 'grades-gfa.csv'
+input_file_name = ''
 
 #output file name for csv
-output_file_name = 'GFAFinal_Results.csv'
+output_file_name = ''
 
 #call main
 main(input_file_name, output_file_name, requirements, points_needed_to_pass_gfa, comment_pass, comment_fail, assignment)
