@@ -19,11 +19,11 @@ You will need to change the values of the variables depending on the type of pro
         output_file_name = ""
     ```
 
-    - The 'assignment' variable defines the assignment column we will fill in the grades server.
-    - The 'comment_pass' variable defines the comment a student will see if they passed the GFA
-    - The 'comment_fail' variable defines the comment a student will see if they failed the GFA
-    - The 'input_file_name' variable defines the CSV file name for the file downloaded from the grades server. **Make sure** that the file is present within the same directory as the python file or else you will encounter an error where the file cannot be found.
-    - The 'output_file_name' variable defines the CSV file name for the output file the script will generate.
+    - The "assignment" variable defines the assignment column we will fill in the grades server.
+    - The "comment_pass" variable defines the comment a student will see if they passed the GFA
+    - The "comment_fail" variable defines the comment a student will see if they failed the GFA
+    - The "input_file_name" variable defines the CSV file name for the file downloaded from the grades server. **Make sure** that the file is present within the same directory as the python file or else you will encounter an error where the file cannot be found.
+    - The "output_file_name" variable defines the CSV file name for the output file the script will generate.
 
     An example of variable values is shown below:
 
