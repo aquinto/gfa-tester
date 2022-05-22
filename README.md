@@ -84,3 +84,45 @@ Secondly, we need to determine the column names for each of the requirements nee
     ```
 
     Once you have changed all the necessary variables, you can run the script.
+
+
+### Usage: Handling Autograded Projects
+
+I will be giving a usage case for autograded projects below. First, let us download the student's scores for that given project.
+
+1. Download the given project, make sure to check off 'Shown' for **Sub-scores for assignments**
+
+Secondly, we need to determine the column names for each of the requirements needed to pass the GFA. Since we are handling an autograded project, we only need to worry about the number of public tests a student needs to pass. This makes everything much easier as each public test is worth the same amount of points but we still need to change the values of variables.
+
+These are the variables you will need to change in the **gfa.py** or **gfa.ipynb** file.
+```python
+    number_of_pub_tests = 0
+    points_per_pub_test = 0
+    number_of_pub_tests_needed_to_pass = 0
+    header_name = ''
+```
+
+- The **'number_of_pub_tests'** variable defines the total number of public tests.
+- The **'points_per_pub_test'** variable defines the amount of points each public test is worth.
+- The **'number_of_pub_tests_needed_to_pass'** variable defines the number of public test the student needs to pass in order to meet GFA requirement.
+- The **'header_name'** variable defines the name of the sub-column for autograded projects.
+
+Here is an example of what the variables could look like:
+
+```python
+    number_of_pub_tests = 15
+    points_per_pub_test = 2
+    number_of_pub_tests_needed_to_pass = 8
+    header_name = 'T'
+```
+
+Since we are handling an autograded project, it is **very** important to change the value of the **autograded** variable from 
+```python
+    autograded = False
+```
+to 
+```python
+    autograded = True
+```
+
+Once you have changed all the necessary variables, you can run the script.
