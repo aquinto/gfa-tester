@@ -6,6 +6,10 @@ The following script was written to calculate which students have met the GFA re
 
 The script was written to account for both manually graded and autograded projects. Manually graded projects such as Processing projects will contain different names for the requirements needed to pass a GFA for that given project, whereas, for autograded projects students only need to pass X amount of public tests to meet a GFA requirement.
 
+You will need to change the values of the variables depending on the type of project you are handling. But generally, there are some variables value you will need to change no matter what. We will start with those below. 
+
+### Usage: General Variable Changes
+
 ### Usage: Handling Manually Graded Projects
 
 I will be giving a usage case for manual projects below.  First, we need to determine the column names for each of the requirements needed to pass the GFA. 
@@ -47,4 +51,5 @@ I will be giving a usage case for manual projects below.  First, we need to dete
     ```python
         autograded = False
     ```
-3. Download the scores for the given project as a CSV file, be sure to check off 'Shown' for **Sub-scores for assignments** 
+
+    Once you have changed all the necessary variables, you can run the script.
