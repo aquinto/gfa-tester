@@ -9,6 +9,32 @@ The script was written to account for both manually graded and autograded projec
 You will need to change the values of the variables depending on the type of project you are handling. But generally, there are some variables value you will need to change no matter what. We will start with those below. 
 
 ### Usage: General Variable Changes
+    Whether you are handling a manually graded project or autograded project, you will have to change the value of the following variables below no matter what.
+
+    ```python
+        assignment = ''
+        comment_pass = ''
+        comment_fail = ''
+        input_file_name = ''
+        output_file_name = ''
+    ```
+
+    - The 'assignment' variable defines the assignment column we will fill in the grades server.
+    - The 'comment_pass' variable defines the comment a student will see if they passed the GFA
+    - The 'comment_fail' variable defines the comment a student will see if they failed the GFA
+    - The 'input_file_name' variable defines the CSV file name for the file downloaded from the grades server. **Make sure** that the file is present within the same directory as the python file or else you will encounter an error where the file cannot be found.
+    - The 'output_file_name' variable defines the CSV file name for the output file the script will generate.
+
+    An example of variable values is shown below:
+
+    ```python
+        assignment = 'GFA1'
+        comment_pass = 'GFA passed'
+        comment_fail = 'GFA failed'
+        input_file_name = 'grades-p1.csv'
+        output_file_name = 'p1-gfa-results.csv'
+    ```
+
 
 ### Usage: Handling Manually Graded Projects
 
