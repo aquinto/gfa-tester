@@ -34,8 +34,6 @@ def main(input_file_name, output_file_name, requirements, points_needed_to_pass_
 
 # CHANGE THE VALUES BELOW AS YOU CHECK GFA FOR OTHER PROJECTS
 
-#original csv file downloaded from grades server
-input_file_name = 'grades-gfa.csv'
 
 #gfa requirements for given assignment, key value should be the requirement title as listed in the grades server
 #value should be the points necessary to pass the GFA requirement
@@ -62,6 +60,9 @@ points_needed_to_pass_gfa = points_total if autograded else points_total_2
 assignment = 'GFA'
 comment_pass = 'all GFAs Passed'
 comment_fail = 'some GFAs Failed'
+
+#original csv file downloaded from grades server
+input_file_name = 'grades-gfa.csv'
 
 #output file name for csv
 output_file_name = 'GFAFinal_Results.csv'
