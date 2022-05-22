@@ -8,7 +8,7 @@ The script was written to account for both manually graded and autograded projec
 
 You will need to change the values of the variables depending on the type of project you are handling. But generally, there are some variables value you will need to change no matter what. We will start with those below. 
 
-### Usage: General Variable Changes
+### General Variable Changes
 
 Whether you are handling a manually graded project or autograded project, you will have to change the value of the following variables below no matter what.
 
@@ -35,15 +35,19 @@ An example of variable values is shown below:
     input_file_name = 'grades-p1.csv'
     output_file_name = 'p1-gfa-results.csv'
 ```
-
+Once these changes are made, we can move on to changes **only** certain variables. These variables will depend on whether we are handling a manually graded project or autograded project. 
 
 ### Usage: Handling Manually Graded Projects
 
-I will be giving a usage case for manual projects below.  First, we need to determine the column names for each of the requirements needed to pass the GFA. 
+I will be giving a usage case for manual projects below. First, let us download the student's scores for that given project.
 
-1. In the **'View & Enter Scores'** section, you'll have all the assignments listed in the first row of the table presented.
+1. Download the given project, make sure to check off 'Shown' for **Sub-scores for assignments**
+
+Secondly, we need to determine the column names for each of the requirements needed to pass the GFA. 
+
+2. In the **'View & Enter Scores'** section, you'll have all the assignments listed in the first row of the table presented.
     - Select the correct project listed in the grades server.
-2. Once you selected the correct project, you will see the sub-columns for that given project along with the total possible points for those sub-columns.
+3. Once you selected the correct project, you will see the sub-columns for that given project along with the total possible points for those sub-columns.
     - Those sub-columns represent the requirements listed in the project description. 
 
     Below is an example of what a project's sub-columns could look like:
