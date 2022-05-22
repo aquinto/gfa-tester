@@ -36,4 +36,15 @@ I will be giving a usage case for manual projects below.  First, we need to dete
     ```python
         manual_columns = {'MB' : 10, 'BP' : 10, 'BT' : 15, 'PC' : 15}
     ```
+
+    These columns name will be present in the CSV file you have downloaded from the grades server. The script will use these column to filter out any unecessary columns to generate our final table showing which students have passed or failed the GFA.
+
+    Since we are handling a manually graded project, it is **very** important to change the value of the **autograded** variable from 
+    ```python
+        autograded = True
+    ```
+    to 
+    ```python
+        autograded = False
+    ```
 3. Download the scores for the given project as a CSV file, be sure to check off 'Shown' for **Sub-scores for assignments** 
