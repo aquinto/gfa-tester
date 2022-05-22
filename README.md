@@ -21,4 +21,13 @@ I will be giving a usage case for manual projects below.  First, we need to dete
         <img src="img/columns.png" />
     </p>
 
+    Given these columns, let us assume that the students need to pass the first four requirements in order to meet the GFA. They **must** receive full points for each requirements.
+
+    We are now going to modify some of the code inside **gfa.py** or **gfa.ipynb** depending on your choice.
+
+    Inside our code we have this variable name:
+
+    ```python
+        manual_columns = {'MB' : 10, 'BT' : 15, 'PC' : 15, 'SG' : 5}
+    ```
 3. Download the scores for the given project as a CSV file, be sure to check off 'Shown' for **Sub-scores for assignments** 
