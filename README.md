@@ -13,3 +13,9 @@ I will be giving a usage case for manual projects below.
 1. Download the scores for the given project as a CSV file, be sure to check off 'Shown' for **Sub-scores for assignments** 
 2. In the **'View & Enter Scores'** section, you'll have all the assignments listed in the first row of the table presented.
     - Select the correct project listed in the grades server.
+3. Once you selected the correct project, you will see the sub-columns for that given project along with the total possible points for those sub-columns.
+    - Those sub-columns represent the requirements listed in the project description. 
+
+    Below is an example of what a project's sub-columns could look like:
+
+    ![alt text](img/columns.png)
