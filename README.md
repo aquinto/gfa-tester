@@ -12,11 +12,11 @@ You will need to change the values of the variables depending on the type of pro
     Whether you are handling a manually graded project or autograded project, you will have to change the value of the following variables below no matter what.
 
     ```python
-        assignment = ''
-        comment_pass = ''
-        comment_fail = ''
-        input_file_name = ''
-        output_file_name = ''
+        assignment = ""
+        comment_pass = ""
+        comment_fail = ""
+        input_file_name = ""
+        output_file_name = ""
     ```
 
     - The 'assignment' variable defines the assignment column we will fill in the grades server.
@@ -28,11 +28,11 @@ You will need to change the values of the variables depending on the type of pro
     An example of variable values is shown below:
 
     ```python
-        assignment = 'GFA1'
-        comment_pass = 'GFA passed'
-        comment_fail = 'GFA failed'
-        input_file_name = 'grades-p1.csv'
-        output_file_name = 'p1-gfa-results.csv'
+        assignment = "GFA1"
+        comment_pass = "GFA passed"
+        comment_fail = "GFA failed"
+        input_file_name = "grades-p1.csv"
+        output_file_name = "p1-gfa-results.csv"
     ```
 
 
