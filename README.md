@@ -18,4 +18,6 @@ I will be giving a usage case for manual projects below.
 
     Below is an example of what a project's sub-columns could look like:
 
-    ![alt text](img/columns.png)
+    <p align="center">
+        <img src="img/columns.png" />
+    </p>
